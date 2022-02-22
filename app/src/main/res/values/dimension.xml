@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="icon_width">50dp</dimen>
+    <dimen name="icon_height">50dp</dimen>
+    <dimen name="window_width_start">140dp</dimen>
+    <dimen name="window_height_start">70dp</dimen>
+    <dimen name="window_width_end">180dp</dimen>
+    <dimen name="window_height_end">250dp</dimen>
+    <dimen name="icon_margin">10dp</dimen>
+    <dimen name="icon_margin_big">30dp</dimen>
+
+</resources>

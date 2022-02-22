@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity(){
 
         binding.image1.setOnClickListener {
             it.isSelected = !it.isSelected
-//            binding.motionContainer.transitionToEnd()
         }
         binding.image2.setOnClickListener {
             it.isSelected = !it.isSelected

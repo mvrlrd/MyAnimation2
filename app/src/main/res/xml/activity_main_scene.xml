@@ -8,50 +8,21 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="140dp"
-            android:layout_height="70dp"
-
+            android:layout_width="@dimen/window_width_start"
+            android:layout_height="@dimen/window_height_start"
             >
-<!--        <CustomAttribute-->
-<!--            app:attributeName="backgroundColor"-->
-<!--            app:customColorValue="#D81B60"/>-->
             </Constraint>
-
-<!--        <Constraint-->
-<!--            android:id="@+id/but"-->
-
-<!--            >-->
-<!--                    <CustomAttribute-->
-<!--                        app:attributeName="text"-->
-<!--                        app:customStringValue="40dp"/>-->
-
-<!--        </Constraint>-->
-
-
     </ConstraintSet>
-
     <ConstraintSet android:id="@+id/end">
         <Constraint android:id="@id/layout"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="180dp"
-            android:layout_height="250dp"
-
-
+            android:layout_width="@dimen/window_width_end"
+            android:layout_height="@dimen/window_height_end"
             >
-
         </Constraint>
-<!--        <Constraint-->
-<!--            android:id="@+id/but"-->
-
-<!--            >-->
-<!--            <CustomAttribute-->
-<!--                app:attributeName="text"-->
-<!--                app:customStringValue="end"/>-->
-
-<!--        </Constraint>-->
     </ConstraintSet>
 
     <Transition
@@ -61,73 +32,7 @@
             app:clickAction="toggle"
             app:targetId="@+id/layout"/>
     </Transition>
-
-
-    <ConstraintSet android:id="@+id/f">
-        <Constraint
-            android:id="@+id/but">
-            <CustomAttribute
-                            app:attributeName="text"
-                            app:customStringValue="end"/>
-        </Constraint>
-    </ConstraintSet>
-
-
-    <Transition
-        app:constraintSetStart="@+id/end"
-        app:constraintSetEnd="@+id/f">
-    <OnClick
-        app:clickAction="toggle"
-        app:targetId="@+id/but"/>
-    </Transition>
-
-
 </MotionScene>
-<!--        app:duration="3000"-->
-
-<!--        <KeyFrameSet>-->
-
-<!--            <KeyAttribute-->
-
-<!--                android:scaleX="1"-->
-<!--                android:scaleY="1"-->
-<!--                app:framePosition="30"-->
-<!--                app:motionTarget="@+id/image"-->
-<!--                android:rotationY="270"-->
-<!--                />-->
-
-<!--            <KeyPosition-->
-<!--                app:framePosition="33"-->
-<!--                app:keyPositionType="parentRelative"-->
-<!--                app:motionTarget="@+id/image"-->
-<!--                app:percentX="0.2" />-->
-<!--            <KeyPosition-->
-<!--                app:framePosition="66"-->
-<!--                app:keyPositionType="parentRelative"-->
-<!--                app:motionTarget="@+id/image"-->
-<!--                app:percentX="-0.2" />-->
-<!--            <KeyPosition-->
-<!--                app:framePosition="99"-->
-<!--                app:keyPositionType="parentRelative"-->
-<!--                app:motionTarget="@+id/image"-->
-<!--                app:percentX="0" />-->
-
-
-<!--            <KeyCycle-->
-<!--                android:rotation="15"-->
-<!--                app:framePosition="100"-->
-<!--                app:motionTarget="@+id/image"-->
-<!--                app:waveOffset="0"-->
-<!--                app:wavePeriod="5"-->
-<!--                app:waveShape="sin" />-->
-<!--        </KeyFrameSet>-->
-
-<!--        <OnSwipe-->
-<!--            app:touchAnchorId="@+id/image"-->
-<!--            app:touchAnchorSide="top"-->
-<!--            app:dragDirection="dragUp"-->
-
-<!--            />-->
 
 
 
